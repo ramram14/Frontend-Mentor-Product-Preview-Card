@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="container__box">
+        <div class="img-container">
+          <picture>
+            <source
+              srcset="./images/image-product-mobile.jpg"
+              media="(max-width: 480px)"
+            />
+
+            <source
+              srcset="./images/image-product-desktop.jpg"
+              media="(min-width: 480px)"
+            />
+            <img
+              src="./images/image-product-desktop.jpg"
+              alt="parfum Gabrielle"
+              class="img-parfume"
+            />
+          </picture>
+        </div>
+        <main class="container__product">
+          <p class="perfume-txt">Perfume</p>
+          <p class="lrg-txt bold-txt">Gabrielle Essence Eau De Parfum</p>
+          <p class="sml-txt">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price">
+            <p class="price-txt bold-txt lrg-txt">$149.99</p>
+            <p class="price-discount"><del>$169.99</del></p>
+          </div>
+
+          <button class="chrt-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill=" hsl(0, 0%, 100%)"
+              viewBox="0 0 256 256"
+              class="btn-icon"
+            >
+              <path
+                d="M224,64l-12.16,66.86A16,16,0,0,1,196.1,144H70.55L56,64Z"
+                opacity="0.2"
+              ></path>
+              <path
+                d="M230.14,58.87A8,8,0,0,0,224,56H62.68L56.6,22.57A8,8,0,0,0,48.73,16H24a8,8,0,0,0,0,16h18L67.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,160,204a28,28,0,1,0,28-28H91.17a8,8,0,0,1-7.87-6.57L80.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,230.14,58.87ZM104,204a12,12,0,1,1-12-12A12,12,0,0,1,104,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,200,204Zm4-74.57A8,8,0,0,1,196.1,136H77.22L65.59,72H214.41Z"
+              ></path>
+            </svg>
+            Add to cart
+          </button>
+        </main>
+      </section>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" title="Frontend mentor"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/ramram14" target="_blank" title="my Github">Ikram</a>.
+      </div>
+  </body>
+</html>
